@@ -1,0 +1,63 @@
+<div class="login-section">
+    <div>
+        <!-- <div class="overlay"></div> -->
+        <!-- <img src="/assets/images/studio_rental/login.png" class="img-fluid" alt="..."> -->
+    </div>
+    <div class="portfolioz">
+        <img class="image-fluid brand-img-large" src="/assets/images/studio_rental/Studio_Rentals-Brand.png">
+        <img class="image-fluid brand-img-responsive" src="/assets/images/studio_rental/Studio_Rentals_Brand-resp.png">
+    </div>
+    <div class="login-container">
+        <div class="login">Login</div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-12 login-inputcol">
+                <form action=""[formGroup]="loginForm" (ngSubmit)="login()" autocomplete="off">
+                    <div class="form-group">
+                        <div class="floating-form mb-3">
+                            <div class="floating-label">
+                                <input type="text" (keyup)="loginvalidation();  getvalidmobile('aa');" name="mobilenumber" id="mobilenumber" class="floating-input input-border" placeholder="  " maxlength="10" onkeypress="return event.charCode >= 48 && event.charCode <= 57"  formControlName="mobilenumber"
+                            [ngClass]="{'is-invalid': loginForm.get('mobilenumber').invalid && (loginForm.get('mobilenumber').dirty || loginForm.get('mobilenumber').touched || loginForm.submitted),
+                            'is-valid': loginForm.get('mobilenumber').valid && (loginForm.get('mobilenumber').dirty || loginForm.get('mobilenumber').touched || loginForm.submitted) }" required>
+                            <span class="error-message" *ngIf="loginForm.get('mobilenumber').invalid && (loginForm.get('mobilenumber').dirty || loginForm.get('mobilenumber').touched || loginForm.submitted) && loginForm.get('mobilenumber').errors?.required">Mobile number can't be blank</span>
+                            <button type="button" [disabled]="inputValue === 10" (click)="otpSend($event)"
+                                class="verifying btn btn-sm" style="display: none;">Verify</button>
+                            <span class="loader2 checkmobile1" style="display: none;"><i class="fa fa-spinner fa-spin"></i></span>
+                            <button type="button" [disabled]="inputValue === 10" class="send btn btn-sm"
+                                style="display: none;" disabled (click)="otpSend($event)">Send</button>
+
+                            <button type="button" [disabled]="inputValue === 10" (keyup)="loginvalidation()"
+                                class="verifyied btn btn-sm" style="display: none;">Verified</button>
+                            <label class="input-label float-label" for="floatingInput">Mobile Number</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center otp-input allotp" style="display: none;">
+                        <div class="floating-label-group">
+                            <label class="otp-text">Please enter OTP here</label>
+                            <input type="tel" (keyup)="loginvalidation(); keytab($event);" class="input-border"
+                                formControlName="otpone" maxlength="1" name="otpone" id="otpone"
+                                required>
+                            <input type="tel" (keyup)="loginvalidation(); keytab($event);" class="input-border"
+                                maxlength="1" formControlName="otptwo" name="aspotptwo" id="otptwo"
+                                required>
+                            <input type="tel" (keyup)="loginvalidation(); keytab($event);" class="input-border"
+                                maxlength="1" formControlName="otpthree" name="otpthree" id="otpthree"
+                                required>
+                            <input type="tel" (keyup)="loginvalidation(); keytab($event);" class="input-border"
+                                maxlength="1" formControlName="otpfour" name="otpfour" id="otpfour"
+                                required><br>
+                            <div id="timer" class="settimer" style="display: none;"></div>
+                        </div>
+                    </div>
+                    <div id="timertwo" class="settimer text-center" style="display: none;"></div>
+                    <div class="continue">
+                        <button class="btn-continue" type="submit" value="submit" [attr.disabled]="(suvmitbutton===false)? 'disabled':null">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="term-condition">By continuing, I agree to the <a class="t-c" routerLink="#">Terms & Conditions</a> of Studio Rentals.</div>
+    </div>
+</div>
+

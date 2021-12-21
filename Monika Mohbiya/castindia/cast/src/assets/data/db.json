@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Headphone - 1",
+      "category_id": "-2",
+      "description": "product description goes  here",
+      "price": 100,
+      "is_available": true,
+      "rating": 4,
+      "review": 120,
+      "vender_name": "seller-1",
+      "warranty": 2
+    },
+    {
+      "id": 2,
+      "name": "Headphone - 2",
+      "category_id": "3",
+      "description": "product description goes  here",
+      "product_img": "path_img",
+      "price": 40,
+      "is_available": true,
+      "rating": 3,
+      "review": 30,
+      "vender_name": "seller-1",
+      "warranty": 1
+    },
+    {
+      "name": "Monika Mohbiya",
+      "rating": 1,
+      "id": 3
+    },
+    {
+      "name": "Laxmi/Ramchandra",
+      "rating": 3,
+      "id": 4
+    },
+    {
+      "name": "Monika Mohbiya",
+      "rating": 23,
+      "id": 5
+    },
+    {
+      "name": "DK",
+      "rating": 23,
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,14 @@
+<p>mfpost works!</p>
+<h1>{{ title}}</h1>
+{{products|json}}
+<div *ngFor='let FirstserviceServics of products;let i=index;'>{{FirstserviceServics.ID}}</div>
+<div *ngFor='let FirstserviceServics of products;let i=index;'>{{FirstserviceServics.name}}</div>
+<div *ngFor='let FirstserviceServics of products;let i=index;'>{{FirstserviceServics.rating}}</div>
+
+
+<form #userForm="ngForm" (ngSubmit)=getUserFormData(userForm.value)>
+    <input type="name" placeholder="Enter Expertise" ngModel name="name"><br>
+    <input type="number" placeholder="Enter Expertise" ngModel name="rating"><br>
+
+    <button>new user</button>
+</form>

@@ -1,0 +1,93 @@
+<div class="register-section">
+    <div>
+        <!-- <div class="overlay"></div> -->
+        <!-- <img src="/assets/images/studio_rental/view-from-above.png" class="img-fluid"> -->
+    </div>
+    <div class="portfolioz">
+        <img class="image-fluid brand-img-large" src="/assets/images/studio_rental/Studio_Rentals-Brand.png">
+        <img class="image-fluid brand-img-responsive" src="/assets/images/studio_rental/Studio_Rentals_Brand-resp.png">
+    </div>
+    
+    <div class="register-container">
+        <div class="register">Register</div>
+        <div class="row class-row justify-content-center">
+            <div class="col-md-5 col-12 class-col">
+                <div class="inputfield-gap">
+                    <form [formGroup]="registerFrom"(ngSubmit)="register()" autocomplete="off">
+                        <div class="radio-stil-motion">
+                            <div class="radio-item" *ngFor="let type of types">
+                                <input class="radio-input" type="radio"  formControlName="TYPE" [id]="type" [value]="type"  (change)="registervalidation()" required>
+                                <label class="radio-label" [for]="type">{{type}}</label>
+                            </div>
+                            
+                            <!-- <div class="radio-item">
+                                <input type="radio"  name="motion" id="floatingradiobtnmotion" value="">
+                                <label for="floatingradiobtnmotion">Motion</label>
+                            </div> -->
+                        </div>
+                        <div class="floating-form mb-3">
+                            <div class="floating-label">
+
+                                <input type="text" class="floating-input input-border" id="floatingprofileid" autocomplete="off" placeholder="  " formControlName="PROFILE_ID" (click)="opendropdown()"  readonly required />
+                                <div class="dropping-list recent-scroll"  >
+                                    <div class="select-options" *ngFor="let iam of iama; let i=index;" value="iam.ID"  (click)="selectprofiles(iam.ID,iam.NAME)">{{iam.NAME}}</div>
+                                </div>
+                                
+                                <label class="input-label float-label" for="floatingprofileid">I am a</label>
+                            </div>
+                        </div>
+                        <div class="floating-form mb-3">
+                            <div class="floating-label">
+                                <input type="text" class="floating-input input-border" id="floatingfirstname" placeholder="  " autocomplete="off" formControlName="firstName" (keyup)="registervalidation()" value="{{firstname}}" required
+                                    [ngClass]="{'is-invalid': registerFrom.get('firstName').invalid && (registerFrom.get('firstName').dirty || registerFrom.get('firstName').touched || registerFrom.submitted),
+                                    'is-valid': registerFrom.get('firstName').valid && (registerFrom.get('firstName').dirty || registerFrom.get('firstName').touched || registerFrom.submitted) }"  [attr.disabled]="(firstname!='')?'disabled':null">
+                                    <span  class="error-message" *ngIf="registerFrom.get('firstName').invalid && (registerFrom.get('firstName').dirty || registerFrom.get('firstName').touched || registerFrom.submitted) && registerFrom.get('firstName').errors?.required">First name can't be blank</span>
+                            <label class="input-label float-label" for="floatingfirstname" >First Name</label>
+                            </div>
+                        </div>
+                        <div class="floating-form mb-3">
+                            <div class="floating-label">
+                                <input type="text" class="floating-input input-border" id="floatinglastname" placeholder="  " autocomplete="off" formControlName="lastName" (keyup)="registervalidation()" value="{{lastname}}" required
+                                    [ngClass]="{'is-invalid': registerFrom.get('lastName').invalid && (registerFrom.get('lastName').dirty || registerFrom.get('lastName').touched || registerFrom.submitted),
+                                    'is-valid': registerFrom.get('lastName').valid && (registerFrom.get('lastName').dirty || registerFrom.get('lastName').touched || registerFrom.submitted) }" [attr.disabled]="(lastname!='')?'disabled':null">
+                                    <span class="error-message" *ngIf="registerFrom.get('lastName').invalid && (registerFrom.get('lastName').dirty || registerFrom.get('lastName').touched || registerFrom.submitted) && registerFrom.get('lastName').errors?.required">Last name can't be blank</span>
+                            <label class="input-label float-label" for="floatinglastname">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="floating-form mb-3">
+                            <div class="floating-label">
+                                <input type="email" class="floating-input input-border" id="floatingemail" placeholder="  " autocomplete="off" formControlName="email" value="{{email}}" (keyup)="registervalidation()" required
+                                    [ngClass]="{'is-invalid': registerFrom.get('email').invalid && (registerFrom.get('email').dirty || registerFrom.get('email').touched || registerFrom.submitted),
+                                    'is-valid': registerFrom.get('email').valid && (registerFrom.get('email').dirty || registerFrom.get('email').touched || registerFrom.submitted) }" [attr.disabled]="(email!='')?'disabled':null">
+                                    <span class="error-message" *ngIf="registerFrom.get('email').invalid && (registerFrom.get('email').dirty || registerFrom.get('email').touched || registerFrom.submitted) && registerFrom.get('email').errors?.required">Email can't be blank</span>
+                                    <!-- <span class="error-message" *ngIf="registerFrom.get('email').invalid && (registerFrom.get('email').dirty || registerFrom.get('email').touched || registerFrom.submitted) && registerFrom.get('email').errors?.pattern">Email is invalid</span> -->
+                                    <span class="error-message" *ngIf="registerFrom.get('email').invalid && (registerFrom.get('email').dirty || registerFrom.get('email').touched || registerFrom.submitted) && registerFrom.get('email').errors?.uniqueEmail">Email already exists</span>
+                            <label class="input-label float-label" for="floatingemail">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="continue">
+                            <button class="btn-continue" type="submit" value="submit" [attr.disabled]="(submitbutton===false)? 'disabled':null">Register</button>
+                        </div>
+                        <div class="term-condition">By continuing, I agree to the <a class="t-c" routerLink="#">Terms & Conditions</a> of Studio Rentals.</div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-1 vr-gap">
+                <div class="vr">
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-5 col-12 facebook-google">
+                <div class="" [innerHtml]="message"></div>
+                <div class="pb-4">
+
+                    <button (click)="SignWithGoogle('')"><span><img src="/assets/images/studio_rental/Icons_Google.png" class="float-left"></span>Sign up with Google</button>
+
+                </div>
+                <div>
+                    <button (click)="SignInWithFB('')"><span><img src="/assets/images/studio_rental/Icons_Facebook.png" class="float-left "></span>Sign up with Facebook</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

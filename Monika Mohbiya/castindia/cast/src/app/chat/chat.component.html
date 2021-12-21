@@ -1,0 +1,719 @@
+<div class="col-9 cover">
+
+
+<!-- <div class="chat cht"><strong>Chats</strong></div> -->
+{{chatopen}}
+<div class="row" style="width: 100%;">
+<div class="col-4 m_colo_3">
+<table class="table table_1">
+<div class="outer_row_search">
+    <div class="row row_search">
+      <div class="col-12" style="padding: 0px;"><i class="fa fa-search  fa_search" aria-hidden="true" ></i> 
+       <input type="text" placeholder="Search or Start a New Chat" class="col search_input" alt="text_1" >
+      </div>
+    </div>
+  </div>
+  <div class="scrollbox">
+  <body>
+<div class="row  row-chat1" [ngClass]='(chatopen=="")?"row-background":"" '>  
+        <div class="col-2">
+         <img src="/assets/image1.png" alt="text_1" class="profile-image">
+        </div>
+<div class="col-10">
+    <div class="row ">
+       <span class="col-8 col-today">
+        <h6 class="text1">Kunal Singh </h6>
+       </span>
+       <span class="col-4 day text-muted small">Today</span>
+        <div class=" text-muted1">Lorem Ipsum has been the industry's standard</div>
+   </div>
+</div>
+</div>
+<hr class="hr1">
+<div class="row row_left row-chat2 " (click)="rowchat('chat2')" [ngClass]='(chatopen=="chat2")?"row-background":"" '>  
+  <div class="col-2 col-image2">
+   <img src="/assets/image2.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text1">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">Today</span>
+ <p class=" text-muted1">Lorem Ipsum has been the industry's standard</p>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+
+<div class="row row_left row-chat3" (click)="rowchat('chat3')" [ngClass]='(chatopen=="chat3")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image3.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text1">Kunal Singh </h6>
+ </span>
+<span class="col-4 day text-muted small">Yesterday</span>
+ <div class=" text-muted1">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+
+<div class="row row_left row-chat4" (click)="rowchat('chat4')" [ngClass]='(chatopen=="chat4")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image4.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">21/12/2021</span>
+ <div class=" text-muted">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+
+<div class="row row_left row-chat5" (click)="rowchat('chat5')" [ngClass]='(chatopen=="chat5")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image5.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">21/12/2021</span>
+ <div class=" text-muted">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+ 
+<div class="row row_left row-chat6" (click)="rowchat('chat6')" [ngClass]='(chatopen=="chat6")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image6.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">21/12/2021</span>
+ <div class=" text-muted">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+
+<div class="row row_left row-chat7" (click)="rowchat('chat7')" [ngClass]='(chatopen=="chat7")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image7.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">21/12/2021</span>
+ <div class=" text-muted">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+
+<div class="row row_left row-chat8" (click)="rowchat('chat8')" [ngClass]='(chatopen=="chat8")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image8.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">21/12/2021</span>
+ <div class=" text-muted">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+
+<div class="row row_left row-chat9" (click)="rowchat('chat9')" [ngClass]='(chatopen=="chat9")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image9.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">21/12/2021</span>
+ <div class=" text-muted">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+
+<div class="row row_left row-chat10" (click)="rowchat('chat10')" [ngClass]='(chatopen=="chat10")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image10.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">21/12/2021</span>
+ <div class="text-muted">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+
+<div class="row row_left row-chat11" (click)="rowchat('chat11')" [ngClass]='(chatopen=="chat11")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image11.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">21/12/2021</span>
+ <div class="text-muted">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1">
+<div class="row row_left row-chat12" (click)="rowchat('chat12')" [ngClass]='(chatopen=="chat12")?"row-background":"" '>  
+  <div class="col-2">
+   <img src="/assets/image12.png" alt="text_1" class="profile-image">
+  </div>
+<div class="col-10">
+<div class="row ">
+ <span class="col-8 col-today">
+  <h6 class="text">Kunal Singh </h6>
+ </span>
+ <span class="col-4 day text-muted small">21/12/2021</span>
+ <div class="text-muted">Lorem Ipsum has been the industry's standard</div>
+
+</div>
+</div>
+</div>
+<hr class="hr1"> 
+     
+        </body> 
+    </div>
+</table>
+</div>
+    <!-- </div>     -->
+        
+<div class="col-8 m_colo_8 chat1" [ngClass]='(chatopen=="")?"show":"hide" '>
+<table class="table table_2">
+  <tr class="tr"><div class="friend-drawer  friend-drawer">
+    <img src="/assets/image1.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+  </div> </tr>
+  <div class="scrollbox scrollbox1">
+    <body >
+      
+
+      
+<div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+<div class="chat">
+  <div class="chat__wrapper ">
+    <div class="chat__message">
+      <div>Message #1</div>
+    </div>
+    <div class="chat__message chat__message-own">
+      <div>Message #2</div>
+    </div>
+  </div>
+</div>
+<div class="chat__form">
+  <form id="chat__form">
+    <input id="text-message" type="text" placeholder="Type your message here ..." (keyup)="ChangeSpeaker($event)">
+    
+    <button type="submit">Send</button>
+  </form>
+</div>
+<div id="result"></div>
+</body></div>
+
+  
+<div class="m_bbox">
+  <div class="bbox">
+    <div class=" row row-chat">
+      <div class="tr">
+
+  <span class=" attachbox" type="button">
+<img src="/assets/attach.png" alt="text_1" class="bottom_attach" type="files" >
+</span>
+<span class="message"><input type="text" id="text-message" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+<span class="col-1">
+  <button type="submit">
+    <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+    <img src="/assets/sender.png" alt="text_1" class="sender" >
+  </button>
+</span>
+ 
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="result"></div>
+   
+     
+</table></div>
+<!-- chatEnd-1 -->
+  
+
+<!-- chatstart-2 -->
+<div class="col-8 m_colo_8 chat2" [ngClass]='(chatopen=="chat2")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image2.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+  <div class="chat">
+    <div class="chat__wrapper">
+      <div class="chat__message">
+        <div>Message #1</div>
+      </div>
+      <div class="chat__message chat__message-own">
+        <div>Message #2</div>
+      </div>
+    </div>
+  </div>
+          
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" ><img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat3start -->
+<div class="col-8 m_colo_8 chat3" [ngClass]='(chatopen=="chat3")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image3.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" ><img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat3end -->
+<!-- chat4start -->
+<div class="col-8 m_colo_8 chat4"  [ngClass]='(chatopen=="chat4")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image4.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+   
+  
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" ><img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat4end -->
+<!-- chat5start -->
+<div class="col-8 m_colo_8 chat5" [ngClass]='(chatopen=="chat5")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image5.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+  
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" ><img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat5end -->
+
+<!-- chat6start -->
+<div class="col-8 m_colo_8 chat6" [ngClass]='(chatopen=="chat6")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image6.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+
+  
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+    <span class=" attachbox" >
+        <img src="/assets/attach.png" alt="text_1" class="bottom_attach" >
+    </span>
+  <span class="message"><input type="text" placeholder="type a message"  class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat6end -->
+<!-- chat7start -->
+<div class="col-8 m_colo_8 chat7" [ngClass]='(chatopen=="chat7")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image7.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+
+  
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" ><img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat7end -->
+<!-- chat8start -->
+<div class="col-8 m_colo_8 chat8" [ngClass]='(chatopen=="chat8")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image8.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+ 
+  
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" ><img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat8end -->
+<!-- chat9start -->
+<div class="col-8 m_colo_8 chat9" [ngClass]='(chatopen=="chat9")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image9.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+  
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" ><img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat9end -->
+<!-- chat10start -->
+<div class="col-8 m_colo_8 chat10" [ngClass]='(chatopen=="chat10")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image10.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+          
+  
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" ><img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat10end -->
+<!-- chat11start -->
+<div class="col-8 m_colo_8 chat11" [ngClass]='(chatopen=="chat11")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image11.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+       
+  
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" ><img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat11end -->
+<!-- chat12start -->
+<div class="col-8 m_colo_8 chat12" [ngClass]='(chatopen=="chat12")?"show":"hide" '>
+  <table class="table table_2">
+    <tr class="tr"><div class="friend-drawer  friend-drawer">
+      <img src="/assets/image12.png" alt="text_1" class="profile-image1"><div class=" "> <h6 class="text-kunal">Kunal Singh </h6><div class="text-muted1">Senior Product Designer</div></div>
+    </div> </tr>
+    <div class="scrollbox scrollbox1">
+      <body >
+  <div class="row row1" ><span class="col"><hr class="hr"> </span><span class=" col-auto Date">12/12/2021</span>  <span class="col"><hr class="hr"> </span></div> 
+          
+  
+  
+  </body></div>
+  
+  <div class="m_bbox">
+    <div class="bbox">
+      <div class=" row row-chat">
+        <div class="tr">
+  
+   <span class=" attachbox" >
+      <img src="/assets/attach.png" alt="text_1" class="bottom_attach" ></span>
+  <span class="message"><input type="text" placeholder="type a message" class="col-11 input-field" (keyup)="ChangeSpeaker($event)"></span>
+  
+  
+  <span class="col-1">
+    <!-- <button> -->
+      <img src="/assets/Layer 46.png" alt="text_1" class="speaker" >
+      <img src="/assets/sender.png" alt="text_1" class="sender" >
+    <!-- </button> -->
+  </span>
+   
+      </div>
+      </div>
+      </div>
+      </div>
+  
+  </table></div>
+<!-- chat12end -->
+
+
+</div>
+</div>

@@ -1,0 +1,115 @@
+<div class="contianer-fluid containcenter">
+    <div class="portfolioz">
+        <img class="image-fluid brand-img-large" src="/assets/images/studio_rental/Studio_Rentals-Brand.png">
+        <img class="image-fluid brand-img-responsive" src="/assets/images/studio_rental/Studio_Rentals_Brand-resp.png">
+    </div>
+    <div class="profile-formdiv col-md-8 col-12">
+        <div class="create-profile">Details</div>
+        <form action="" [formGroup]="detailForm" (ngSubmit)="detail()" autocomplete="off">
+            <div class="row">
+                <!-- <div class="col-md-6 col-12 floating-form mb-3">
+                    <div class="floating-label">
+                        <select class="floating-select select-border" list="browsers" id="floatingInput" name="PROFILE_ID" formControlName="PROFILE_ID" autocomplete="off" placeholder="  " (change)="detailvalidation()" required>
+                            <option value="" style="display: none" selected></option>
+                            <option class="select-options" *ngFor="let iam of iama" value="{{iam.ID}}">{{iam.NAME}}</option>
+                        </select>
+                        <label class="label-size input-label float-label" for="floatingInput">I am a</label>
+                    </div>
+                </div> -->
+                <div class="col-md-6 col-12 floating-form mb-3">
+                    <div class="floating-label">
+                        <input type="text" class="floating-input input-border" id="floatingprofileid" autocomplete="off" placeholder="  " (click)="opendropdown('dropone')"  readonly required  value="{{profilename}}"/>
+                        <div class="dropping-list dropone recent-scroll"  >
+                            <div class="select-options" *ngFor="let iam of iama; let i=index;" value="iam.ID"  (click)="selectprofiles(iam.ID,iam.NAME)">{{iam.NAME}}</div>
+                        </div>
+                        
+                        <label class="input-label float-label" for="floatingprofileid">I am a</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 floating-form mb-3" style="position: relative;">
+                    <div class="floating-label">
+                        <input type="text" class="floating-input select-border" id="floatingInput" name="PAY_PER_SIFT" formControlName="PAY_PER_SIFT" autocomplete="off" placeholder="  " onkeypress="return event.charCode >= 48 && event.charCode <= 57" (keyup)="detailvalidation()" required>
+                        <label class="label-size input-label float-label" for="floatingInput">Pay</label>
+                        <span class="per-shift">per shift</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 floating-form mb-3">
+                    <div class="floating-label">
+                        <input type="text" class="floating-input input-border" id="floatprojecttype" autocomplete="off" placeholder="  " (click)="opendropdown('droptwo')"  readonly required  />
+                        <div class="dropping-list droptwo recent-scroll"  >
+                            <div class="select-options" *ngFor = "let project of projecttype" value="project.ID"  (click)="selectprojecttype(project.ID,project.NAME)">{{project.NAME}}</div>
+                        </div>
+                        <label class="label-size input-label float-label" for="floatingInput">Project Types</label>
+
+                        <!-- <select class="floating-select select-border" id="myDropdown" name="PROJECT_TYPE" formControlName="PROJECT_TYPE" autocomplete="off"  (change)="detailvalidation()"  required>
+                            <option class="select-options" *ngFor = "let project of projecttype" value="{{project.ID}}">{{project.NAME}}</option>
+                        </select>
+                        <label class="label-size input-label float-label" for="floatingInput">Portfolio Type</label> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 floating-form mb-3">
+                    <div class="floating-label">
+                        <input class="floating-input select-border" id="floatingInput" name="myBrowser" formControlName="CLIENT" autocomplete="off" placeholder="  " (keyup)="detailvalidation()" required>
+                        <label class="label-size input-label float-label" for="floatingInput">Clients worked with</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 floating-form mb-3">
+                    <div class="floating-label">
+                        <input class="floating-input select-border" id="floatingInput" name="myBrowser" formControlName="EXPERTISE" autocomplete="off" placeholder="  " (keyup)="detailvalidation()" required>
+                        <label class="label-size input-label float-label" for="floatingInput">Expertise</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 floating-form mb-3">
+                    <div class="floating-label">
+                        <input type="text" class="floating-input select-border" id="floatingInput" name="myBrowser" formControlName="EXPERIENCE" autocomplete="off" placeholder="  " onkeypress="return event.charCode >= 48 && event.charCode <= 57" (keyup)="detailvalidation()" (keyup)="detailvalidation()" required>
+                        <label class="label-size input-label float-label" for="floatingInput">Experience</label>
+                        <span class="per-shift">in years</span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-12 floating-form mb-3">
+                    <div class="floating-label">
+                        <input class="floating-input select-border" id="floatingInput" name="myBrowser" formControlName="WORK_LOCATION" autocomplete="off" placeholder="  " (keyup)="detailvalidation()" required>
+                        <label class="label-size input-label float-label" for="floatingInput">Work Loction</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-12 floating-form mb-3">
+                    <div class="floating-label">
+                        <input class="floating-input select-border" id="floatingInput" name="myBrowser" formControlName="ABOUT_ME" autocomplete="off" placeholder="  " (keyup)="detailvalidation()" required>
+                        <label class="label-size input-label float-label" for="floatingInput">About Me</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-12" style="text-align: left;">
+                    <label  class="label-size input-label" for="uplaodimage">Upload Portfolio Images</label>
+                    <div class="row image-div scroll">
+                        <div class="col-auto addmoregap">
+                            <label class="card uplaod-image" for="uplaodimage"><img class="add-images-vedio" src="/assets/images/studio_rental/layer-2.png">
+                                <span>Add Images /Videos</span>
+                            </label>
+                        </div>
+
+                        <input class="col-auto form-control" style="display:none;" id="uplaodimage" type="file"  multiple="" (change)="uploadFile($event)" (keyup)="detailvalidation()" required>
+                        <div class="col-auto " *ngFor="let image of images; let i=index;">
+                            <div class="upload-image-div">
+                                <span class="">
+                                    <img class="miheal-image" for="file-input"  [src]="image.url" *ngIf="image.type == 'img'">
+                                    <video for="file-input" [src]="image.url" *ngIf="image.type == 'video'"  class="miheal-video" controls></video>
+                                    <img class="span-img" src="/assets/images/studio_rental/add-images-cross.png" (click)="removeSelectedFile(i)">
+                                    <img class="span-img1" src="/assets/images/studio_rental/add-image_resp.png" (click)="removeSelectedFile(i)">
+                                </span>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="continue">
+                <button class="btn-continue" type="submit" value="submit" [attr.disabled]="(submitbutton===false)? 'disabled':null">Continue</button>
+            </div>
+        </form>
+    </div>
+</div>

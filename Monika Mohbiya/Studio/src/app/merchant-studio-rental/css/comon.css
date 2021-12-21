@@ -1,0 +1,333 @@
+.containcenter{
+    position: relative;
+    text-align: center;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0000005E;
+}
+.img-div1{
+    display:none;
+}
+.portfolioz{
+    position: absolute;
+    top: 8px;
+    left: 30px;
+}
+.skip{
+    position: absolute;
+    top: 15px;
+    right: 60px;
+}
+.skip a{
+    cursor: pointer;
+    font-family:  "Proxima Nova", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    opacity: .5;
+}
+.skip a:hover{
+    opacity: 1;
+}
+.sidenav{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    text-align: left;
+}
+.sidenav a{
+    cursor: pointer;
+    font-family:  "Proxima Nova", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    opacity: .5;
+}
+.sidenav a:hover{
+    opacity: 1;
+}
+.sidenav ul{
+    list-style: none;
+}
+.list-div, .list-div1, .list-div2{
+    display: none;
+}
+.choose-form{
+    text-align: left;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.choose-portfolio{
+    font-family:  "Proxima Nova", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.label-size{
+    font-family:  "Proxima Nova", sans-serif;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.label-size1{
+    font-family:  "Proxima Nova", sans-serif;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.select-border{
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    background: transparent;
+    font-family:  "Proxima Nova", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid#FFFFFF;
+    border-radius: 0;
+}
+.select-border:focus { 
+    cursor: pointer;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: none;
+}
+.continue{
+    padding-top: 30px;
+    text-align: right;
+}
+.btn-continue{
+    font-family:  "Proxima Nova", sans-serif;
+    font-size: 14px;
+    color:#000000;
+    height: 30px;
+    width: 186px;
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 3px;
+    opacity: .5;
+    border: none;
+}
+.months{
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-radius: 3px;
+    padding: 4px 20px 4px 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.input-radio{
+    display: none;
+}
+.package-card{
+    box-shadow: 0px 0px 10px #02110C;
+    background: #02110C;
+    border-radius: 6px;
+    padding: 15px 15px ;
+    position: relative;
+    flex-shrink: 0;
+    opacity: 1;
+}
+.feature-box{
+    background: transparent linear-gradient(271deg, #DC0428 0%, #6E0214 100%) 0% 0% no-repeat padding-box;
+    border-radius: 2px 2px 2px 0px;
+    opacity: 1;
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+.feature-box1{
+    font-family:  "Proxima Nova", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #D6D6D6;
+    opacity: 1;
+}
+.col-cardgap{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.col-card{
+    display: flex;
+}
+.col-imggap{
+    padding-top: 20px;
+}
+.vr-gap{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.vr{
+    display: inline-flex;
+    width: 1px; 
+    height: 80px;
+    background-color: #FFFFFF;
+    opacity: .5;
+}
+.vr hr{
+    margin: 0px 0px 0px 12.5px;
+    color: #707070;
+}
+.pro-size{
+    font-family:  "Proxima Nova", sans-serif;
+    font-weight:  bold;
+    font-size: 25px;
+    color: #DC0428;
+    text-align: left;
+}
+.pro-size span{
+    position: absolute;
+    top: 50px;
+}
+.col-imggap hr{
+    margin: 0;
+    color: #DC0428;
+    width: 20px;
+    height: 2px;
+    opacity: 1;
+}
+.pro-price{
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: left;
+}
+.pro-price span{
+    text-decoration: line-through;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 20px;
+    color: #D6D6D6;
+    padding-left: 15px;
+    opacity: 0.8;
+}
+.hr-hr hr{
+    margin: 0;
+    color: #707070;
+    opacity: .8;
+}
+.pro-list{
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    color: #D6D6D6;
+    opacity: 0.8;
+    padding-top: 20px;
+}
+.pro-list ul{
+    list-style: none;
+    text-align: left;
+}
+.pro-list li{
+    padding-bottom: 10px;
+}
+.pro-list i{
+    padding-right: 10px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+}
+.btn-choose-div{
+    text-align: center;
+}
+.btn-choose{
+    font-family:  "Proxima Nova", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:#D6D6D6;
+    background: #DC0428;
+    height: 30px;
+    width: 276px;
+    border-radius: 3px;
+    opacity: 1;
+    border: none;
+}
+.customise-link{
+    color: #D6D6D6;
+    text-decoration: none;
+}
+.btn-choose:checked{
+    font-family:  "Proxima Nova", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:#14110F;
+    background: #D6D6D6;
+    height: 30px;
+    width: 276px;
+    border-radius: 3px;
+    opacity: 1;
+    border: none;
+}
+.btn-choose span{
+    padding-left: 15px;
+}
+
+.form-div3{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+.card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 366px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2 {
+    transform: translatex(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1 {
+    transform: translatex(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+#item-2:checked ~ .player #test {
+    transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test {
+    transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test {
+    transform: translateY(-80px);
+}
+

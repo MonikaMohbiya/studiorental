@@ -1,0 +1,42 @@
+<!-- Button trigger modal -->
+<div class="text-center">
+    <button type="button" class="btn btn-dark  " data-bs-toggle="modal" data-bs-target="#exampleModal1">
+      Launch demo modal
+    </button>
+    </div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <i class="fa fa-times i1"  data-bs-dismiss="modal"></i>
+        
+        <h5 class="modal-title  Create_Event" id="exampleModalLabel1">Create / Add Project</h5>
+        <br>
+
+
+
+<div class="form-group col-sm-12 ">
+    <label class="Event_Name ">Note to the owner</label>
+   
+  </div>
+  
+  <div>
+    <div class="col-12 m_col12">
+    <textarea  class="col-12 Event "
+                  rows="15"
+                  maxlength="700"
+                  [(ngModel)]="mydata" 
+                  placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                  (keyup)="mychange($event)"></textarea></div>
+                  <div class="" style="text-align: end;"><span class="max" >{{remainingText}}/700</span></div>
+
+</div>
+  <div class="bottom-button-center">
+    <button type="button" class="btn btn-danger b1" data-bs-dismiss="modal" >
+      Next
+    </button>
+   
+   </div>
+  </div>
+  </div>
+  </div>

@@ -1,0 +1,21 @@
+:host {  
+    display: block;  
+  }  
+  p {  
+    font-family: Lato;  
+  }  
+  .ModalDocument{
+    
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.8;
+  }
+  .blackbutton{
+    padding-top: 30px;
+    padding-right: 60px;
+    color: #FFFFFF;
+    text-align: right;
+    opacity: 0.79;
+  }
+  .ButtonDocument:focus{
+ box-shadow: none;
+  }

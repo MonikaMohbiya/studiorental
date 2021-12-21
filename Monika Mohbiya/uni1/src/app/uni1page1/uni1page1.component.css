@@ -1,0 +1,132 @@
+.pageone-card{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+.Hello_User_Name{
+    text-align: left;
+    font: normal normal medium ;
+    font-size: 50px;
+    font-family: "Addington CF",sans-serif ;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.Hello_User_Name2{
+    text-align: left;
+font: normal normal medium ;
+font-size:  25px;
+font-family: "Univa Nova",sans-serif ;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+.row-Recent-Requests{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/* .col-Recent-Requests{
+    padding-top: 20px;
+} */
+.Recent-Requests{
+    background: #868A73 0% 0% no-repeat padding-box;
+box-shadow: 0px 5px 15px #00000029;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 20px;
+border-radius: 10px;
+opacity: 1;
+}
+.active-subscription_view-data{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: left;
+font: normal normal medium ;
+font-size: 20px;
+font-family:"Univa Nova", sans-serif ;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+.View-Subscription-Plans{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+box-shadow: 0px 8px 24px #54525229;
+border-radius: 26px;
+opacity: 1;
+}
+.col-View-Subscription-Plans{
+    padding-bottom: 20px;
+}
+.Recent_Requests_Sent{
+    text-align: left;
+font: normal normal bold;
+font-size:  25px;
+font-family:"Univa Nova", sans-serif ;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+.Recent_Requests_Received{
+    text-align: left;
+    font: normal normal bold ;
+    font-size:  25px;
+font-family:"Univa Nova", sans-serif ;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;  
+}
+.My-Recent-Entities{
+    text-align: left;
+font: normal normal bold ;
+font-size: 30px;
+font-family: "Addington CF",sans-serif ;
+letter-spacing: 0px;
+color: #1A1A1A;
+opacity: 1;
+}
+.you-need-Registration{
+text-align: left;
+font: normal normal medium ;
+font-family:"Univa Nova", sans-serif ;
+
+font-size: 15px;
+letter-spacing: 0px;
+color: #1A1A1A;
+opacity: 1;
+}
+.upper-registration{
+    padding-left: 40px;
+    padding-right: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 5px 15px #00000029;
+border-radius: 10px;
+opacity: 1;
+}
+.Entity-Registration{
+    text-align: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+box-shadow: 0px 8px 24px #54525229;
+border-radius: 26px;
+opacity: 1;
+}
+.upper-Entity-Registration{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card12{
+text-align: right;    
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 5px 15px #00000029;
+border-radius: 10px;
+opacity: 1;
+}
+.pageone-bottom-card{
+    text-align: right;
+}

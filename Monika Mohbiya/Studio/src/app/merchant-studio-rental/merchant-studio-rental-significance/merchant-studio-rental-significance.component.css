@@ -1,0 +1,130 @@
+.alluserdetails{
+    background: #1A1A1A 0% 0% no-repeat padding-box;
+    position: relative;
+}
+.market-place{
+    position: absolute;
+    top: -68px;
+    right: 5%;
+    color: #6B6B6B;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 180px;
+    opacity: 0.15;;
+}
+.class-row{
+    position: relative;
+    z-index: 1;
+}
+.brand-img-large{
+    display: block;
+}
+.brand-img-responsive{
+    display: none;
+}
+.studio-rental-brand{
+    padding: 30px;
+}
+.still-motion-col{
+    padding-bottom: 50px;
+}
+.still-motion{
+    text-align: left;
+    padding-top: 45px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: #FFFFFF;
+}
+.still-motion-size{
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+}
+.still-motion-para{
+    font-family: "Montserrat-Light", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    opacity: .7;
+}
+.still-img1{
+    border-radius: 0px 153px 6px 0px;
+    opacity: 1;
+}
+.still-img2{
+    border-radius: 153px 0px 0px 6px;
+    opacity: 1;
+}
+.get-start{
+    padding-top: 20px ;
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
+.img-getstart{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.get-start span{
+    padding-left: 25px;
+}
+.img-show{
+    display: none;
+}
+.still-img2-show{
+    display: block;
+}
+.image-padding{
+    padding: 0;
+}
+
+@media (max-width: 990px){
+    .studio-rental-brand{
+        padding-left: 10px;
+    }
+    .brand-img-large{
+        display: none;
+    }
+    .brand-img-responsive{
+        display: block;
+    }
+    .img-show{
+        display: block;
+        padding: 0;
+        padding-left: 20px;
+    }
+    .still-img2-show{
+        display: none;
+    }
+    .still-motion-col{
+        padding-bottom: 10px;
+    }
+    .image-padding{
+        padding-right: 20px;
+    }
+    .still-motion{
+        padding-top: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .still-motion-size{
+        font-size: 16px;
+    }
+    .still-motion-para{
+        font-size: 12px;
+        opacity: .8;
+    }
+    .get-start{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+    }
+    .img-getstart{
+        font-size: 20px;
+    }
+    .market-place{
+        top: -10px;
+        font-size: 40px;
+    }
+}

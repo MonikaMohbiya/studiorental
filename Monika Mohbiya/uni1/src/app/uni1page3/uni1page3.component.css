@@ -1,0 +1,319 @@
+.My_Entities{
+    text-align: left;
+font: normal normal medium;
+font-family: "Addington CF",sans-serif;
+font-size:  50px;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+.mm{
+    text-align: right;
+}
+.data-enter{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 3px 3px 6px #00000029;
+border-radius: 5px;
+opacity: 1;
+}
+.outer-Entity_Registration{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #54525229;
+border-radius: 26px;
+opacity: 1;
+}
+.Entity_Registration{
+    padding-top: 25px;
+    text-align: right;
+font: normal normal normal ;
+font-size: 16px;
+font-family: "Proxima Nova",sans-serif ;
+letter-spacing: 0px;
+color: #000000;
+opacity: 0.5;
+}
+.panc_card{
+    border: none;
+}
+.pan-card-header{
+    background: #0D4978 0% 0% no-repeat padding-box;
+box-shadow: 0px 5px 15px #0D4978;
+color: #FFFFFF;
+border-radius: 5px;
+opacity: 1;
+}
+.pan_card{
+    text-align: left;
+font: normal normal medium ;
+font-size: 30px;
+font-family: "Univa Nova",sans-serif;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+.GSTN{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:42px; 
+text-align: left;
+font: normal normal bold ;
+font-family: 25px;
+font-family: "Univa Nova" ,sans-serif ;
+letter-spacing: 0px;
+color: #212121;
+opacity: 1;
+}
+.State{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:42px; 
+text-align: left;
+font: normal normal bold ;
+font-family: 25px;
+font-family: "Univa Nova" ,sans-serif ;
+letter-spacing: 0px;
+color: #212121;
+opacity: 1;
+}
+.UNI_ID{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:42px; 
+    text-align: left;
+    font: normal normal bold ;
+    font-family: 25px;
+    font-family: "Univa Nova" ,sans-serif ;
+    letter-spacing: 0px;
+    color: #212121;
+    opacity: 1; 
+}
+.Status{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    text-align: left;
+    font: normal normal bold ;
+    font-family: 25px;
+    font-family: "Univa Nova" ,sans-serif ;
+    letter-spacing: 0px;
+    color: #212121;
+    opacity: 1; 
+}
+.Form_Link{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:42px; 
+    text-align: left;
+    font: normal normal bold ;
+    font-family: 25px;
+    font-family: "Univa Nova" ,sans-serif ;
+    letter-spacing: 0px;
+    color: #212121;
+    opacity: 1; 
+}
+.BR_Doc_Status{
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    text-align: left;
+    font: normal normal bold ;
+    font-family: 25px;
+    font-family: "Univa Nova" ,sans-serif ;
+    letter-spacing: 0px;
+    color: #212121;
+    opacity: 1; 
+}
+.pan_col1{
+    background: #717171 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+}
+
+.td{
+    text-align: left;
+}
+.sr_no_column{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 3px 3px 6px #00000029;
+    padding-left: 10px;
+   color: #FFFFFF;;
+    padding-right: 10px;
+    background: #717171 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+}
+.GSTN_column{
+    padding-left: 40px;
+    color: black;
+}
+.State_column{
+    padding-left: 40px;
+    color: black;
+}
+.UNI_ID_column{
+    padding-left: 40px;
+    color: black;
+}
+.Status_column{
+    /* padding-left: 40px; */
+    text-align:center;
+
+    font: normal normal bold ;
+    font-size: 25px;
+    font-family: "Univa Nova",sans-serif ;
+letter-spacing: 0px;
+color: #FF0000;
+    
+}
+.Form_Link_column{
+    text-align:center;
+    color: black;
+}
+/* .form-data{
+ padding-left: 40px;
+ padding-right: 40px;
+} */
+.link-outer{
+    padding-left: 40px;
+   
+}
+.BR_Doc_Status_column{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+.data-enter{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+}
+.data-enter-form-link{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1; 
+}
+.link-Form_Link_column{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 3px 3px 6px #00000029;
+border-radius: 5px;
+opacity: 1;
+}
+.link_column{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.Confirmed-BR-Doc_Status_column{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #208E00 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+}
+.Confirmed_column{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* .panel-default>.panel-heading {
+    background: #0D4978 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 15px #0D4978;
+    color: #FFFFFF;
+    border-radius: 5px;
+    opacity: 1;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .panel-default>.panel-heading a {
+    display: block;
+    padding: 10px 15px;
+  }
+  
+  .panel-default>.panel-heading a:after {
+    content: "";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: right;
+    transition: transform .25s linear;
+    -webkit-transition: -webkit-transform .25s linear;
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="true"] {
+    background-color:#0D4978 ;
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="true"]:after {
+    content: "\203A";
+    color: #FFFFFF;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+   
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="false"]:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    color: #FFFFFF;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  } */
+  .down_arrow{
+      display: block;
+  }
+  .up_arrow{
+      display: none;
+  }
+  .collasped .down_arrow{
+    display: none;
+  }
+  .collasped .up_arrow{
+      display: block;
+  }
+  /* mmmmmmmmmmmmm */
+  .fa-chevron-down{
+    display: none;
+    color: #00000029;
+}
+.fa-chevron-up{
+    display: block;
+    color: #00000029;
+}
+.collapsed .fa-chevron-down{
+    display: block;
+}
+.collapsed .fa-chevron-up{
+    display: none;
+}
+.arrow_up{
+    color: #FFFFFF;
+}
+.arrow_down{
+    color: #FFFFFF;
+}

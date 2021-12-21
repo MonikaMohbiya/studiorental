@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: local("PlayfairDisplay"), url(./assets/fonts/PlayfairDisplay-Regular.ttf) format("truetype");
+    font-family: "Montserrat-Light";
+    src: local("Montserrat-Light"), url(./assets/fonts/Montserrat-Light.ttf) format("truetype");
+    font-family: "Montserrat";
+    src: local("Montserrat"), url(./assets/fonts/Montserrat-Medium.ttf) format("truetype");
+    font-family: "Montserrat-Regular";
+    src: local("Montserrat-Regular"), url(./assets/fonts/Montserrat-Regular.ttf) format("truetype");
+    font-family: "Montserrat-SemiBold";
+    src: local("Montserrat-SemiBold"), url(./assets/fonts/Montserrat-SemiBold.ttf) format("truetype");
+}
+.loader{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    text-align: center;
+    font-size: 20em;
+    background: #00000078;
+    color: #ffffff91;
+    z-index: 99999;
+}
+.float-left{
+    float: left;
+}
+.dp-input-container{
+    display: none;
+}

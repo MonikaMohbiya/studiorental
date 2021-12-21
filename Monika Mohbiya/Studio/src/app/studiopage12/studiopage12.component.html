@@ -1,0 +1,286 @@
+<!-- Button trigger modal -->
+<div class="text-center">
+<button type="button"
+class="btn btn-dark  "
+data-bs-toggle="modal"
+data-bs-target="#exampleModal">
+Launch demo modal
+</button>
+</div>
+<!-- Modal -->
+<form [formGroup]='Addform' >
+<div class="modal fade"
+id="exampleModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+    <div class="row">
+<span class="col-11"><h5 class="modal-title  Create_Event  " id="exampleModalLabel">Create / Add Project</h5></span>
+<span class="col-1"><i class="close_round_icon"
+    data-bs-dismiss="modal" (click)="resetaddform()"> 
+    <img src="assets/images/close_round_icon.png"></i>
+    </span>
+</div>
+<span><img src="assets/images/star.png"
+class="star"><label
+class="All-fields-mandatory">
+All fields are mandatory</label></span>
+
+<div class="container">
+<div class="row ">
+
+<div class=" col-12 mt-2">
+<label class="label label-default Event_Name">Project Name</label>
+<div class="col-12 m_col12">
+<b><input class="col-12 Event" (ngModelChange)='getdatetwo1($event)' readonly name='ProjectName' formControlName='ProjectName'
+    type="text"  (click)="opendrop1()"
+    placeholder="Street Photoshoot"></b>
+    <div class="dropdown show openone1" >
+        <div class="dropdown-menu openone1" aria-labelledby="dropdownMenuLink">
+            <div class="scrollbox scrollbox-time">
+                <body>
+          <a *ngFor="let project of studiospacecreateproject;" class="dropdown-item" (click)="selecttimeone1(project.PROJECT_NAME)">{{project.PROJECT_NAME}}</a>
+        
+          </body>
+        </div>
+        </div>
+      </div>
+
+</div>
+</div>
+<div class=" col-sm-12 mt-2">
+<label class="label label-default Event_Name"
+for="event name">Project Description</label>
+<div class="col-12 m_col12 mt-2">
+<b><textarea class="col-12 project-description-input "
+    type="text"
+    rows="2"
+    maxlength="700"
+    id="event name"
+    placeholder="This photoshoot is for a brand located in Pune."  name='ProjectDescription' formControlName='ProjectDescription' (keyup)="mychange($event)"></textarea></b>
+</div>
+</div>
+<div class="text_count">
+<span class="min" >{{remainingText1}}/700</span>
+</div>
+
+<div class=" col-12 mb-2 mt-2">
+<label class="label label-default Event_Name"
+for="event name">Project Type</label>
+<div class="col-12 m_col12 mt-2">
+<b><input class="col-12 Event"
+    type="text"
+    id="event name"
+    placeholder="Western"   formControlName='Project_Type'></b>
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="col-6 mb-2">
+<label class="label  Select_Date">Project Start Date</label>
+<div class="col-12  mt-2 ">
+
+
+    <input type="text" class="m_col12" theme="dp-material"  placeholder="Start Date "
+    formControlName='ProjectStartDate'  [dpDayPicker]="datePickerConfig" (ngModelChange)='getdate($event)' readonly
+                          name="ProjectStartDate" />
+</div>
+</div>
+<div class="  col-6 mb-2">
+<label class="label  Select_Date">Project End Date</label>
+
+<div class="col-12  mt-2 ">
+    <input type="text" class="m_col12" theme="dp-material"  placeholder="Start Date "
+    formControlName='ProjectEndDate'  [dpDayPicker]="datePickerConfigtwo" (ngModelChange)='getdatetwo($event)' readonly
+name="ProjectEndDate" />
+
+</div>
+
+</div>
+<div class="col-6 mb-2">
+<label class="start_time ">Select Start Time</label>
+<div class="  mt-2 " >
+    <input type="text" class="m_col12" placeholder="Select Start Time"
+   (ngModelChange)='getdatetwo($event)' readonly name="SelectStartTime" formControlName="SelectStartTime" (click)="opendrop()"/>
+<div class="dropdown show openone" >
+    <div class="dropdown-menu openone" aria-labelledby="dropdownMenuLink">
+        <div class="scrollbox scrollbox-time">
+            <body>
+      <a *ngFor="let time of timingname;" class="dropdown-item" (click)="selecttimeone(time.TIMING_NAME)">{{time.TIMING_NAME}}</a>
+    
+      </body>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-6 mb-2">
+    <label class="start_time ">Select End Time</label>
+    <div class="  mt-2 " >
+        <input type="text" class="m_col12" placeholder="Select End Time"
+       (ngModelChange)='getdatetwo($event)' readonly
+    name="SelectEndTime" formControlName="SelectEndTime" (click)="opendroptwo()"/>
+    <div class="dropdown show opentwo" >
+        <div class="dropdown-menu opentwo" aria-labelledby="dropdownMenuLink">
+            <div class="scrollbox scrollbox-time">
+                <body>
+            <a *ngFor="let time of timingname;" class="dropdown-item" (click)="selecttimetwo(time.TIMING_NAME)">{{time.TIMING_NAME}}</a>
+         
+          </body>
+          </div> 
+        </div>
+      </div>
+
+    
+    </div>
+    </div>
+<div class="tr">
+<span ><span ><input type="checkbox" name='IamFlexiablewithDate_Time' formControlName='IamFlexiablewithDate_Time' class="checkbox-IamFlexiablewithDate_Time" ></span></span>
+<span class="Event_Name-Flexiable"><span class="Event_Name">I am Flexiable with Date & Time</span></span>
+</div>
+<div class="form-group col-sm-12 ">
+<label class="label label-default space-input"
+for="event name">Studio/Space Name</label>
+<div class="col-12 m_col12 mt-2">
+<b><input class="col-12 Event"
+    type="text"
+    id="event name"
+    placeholder="IOLITE STUDIO" name='Studio_SpaceName' formControlName='Studio_SpaceName'></b>
+</div>
+</div>
+<div class="form-group col-sm-12  mt-2">
+<label class="label label-default space-input"
+for="event name">Studio/Space location </label>
+<div class="col-12 m_col12 mt-2">
+
+<b> <input class="col-12 Event"
+    type="text"
+    id="event name"
+    placeholder="Modal Colony,Shivaji Nagar,Pune Pune" name='Studio_Spacelocation' formControlName='Studio_Spacelocation'></b>
+</div>
+</div>
+
+<div class="col-12 ">
+<div class="row row_no-shift ">
+
+<span class="col-6"><label class="label label-default Event_Name"
+    for="event name">No.of shift required </label></span>
+<span class="col-1 button-text">
+<input type="button"
+      value="-"
+      id="subs"
+      class="btn col_shift minus_col2 fa_minus"
+      (click)="remove()"/>
+&nbsp;</span>
+<span class="col-2 button-text" ><input type="number"
+    class="onecol2"
+    id="noOfRoom"
+    min='1' (keypress)="isNumeric($event)" 
+    name="noOfRoom"name='No_of_shift_required' value="1" readonly/>
+    &nbsp;
+   
+</span>
+<span class="col-1 button-text">
+<input type="button"
+      value="+"
+      id="adds"
+      class="btn col_shift plus_col2 fa_plus" 
+      (click)="add()"/>
+      &nbsp;</span>
+
+<!-- <span class="col-1 col_shift">
+
+<button class="minus_col2" onclick="decrement()"><i class=" fa fa-minus fa_minus" aria-hidden="true"></i></button>
+</span>
+<input class="col-1 onecol2 " id=demoInput #inc type=number min=1 max=10>
+<span class="col-1 col_shift"><button class="plus_col2" (click)="increment(inc.value)"><i class="fa fa-plus fa_plus" aria-hidden="true"></i></button>
+</span> -->
+</div>
+</div>
+
+<label class="label label-default Event_Name">Estimated Total Amount</label>
+<div>
+<div class="col-sm-12 m_col12 mb-2 mt-2">
+<!-- <span><b><img src="assets/images/Rupees.png" class="input-rupees"></b> -->
+<span class="col-11 Event-input-rupees" type="input"><b><img src="assets/images/Rupees.png" class="input-rupees"></b>
+    
+    <span class="rs_5443-Event" placeholder="5433">{{price}}/-</span></span>
+<!-- </span> -->
+</div>
+<label class="label label-default Event_Name">Note:The price of Studio/Space will be calculated according
+to
+shifts (1 shift = 1 day)</label>
+
+</div>
+
+<div class="text-center">
+<button type="button"
+class="btn-next  b1"
+data-bs-toggle="modal"
+data-bs-target="#exampleModal1" (click)="AddFormSubmit()">
+Next
+</button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Modal2 -->
+
+</div>
+
+
+<div class="modal fade"
+id="exampleModal1"
+tabindex="-1"
+aria-labelledby="exampleModalLabel1"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content">
+<i class="close_round_icon"
+data-bs-dismiss="modal" (click)="resetaddform()">
+<img src="assets/images/close_round_icon.png"></i>
+
+<div class="form-group col-sm-12 ">
+<label class="Event_Name ">Note to the owner</label>
+
+</div>
+
+<div>
+<div class="col-12 m_col12">
+<textarea class="col-12 not-to-the-owner-input "
+rows="15"
+maxlength="700"
+placeholder="The Studio/ Space is required only for two days; 1 Jan 2021 – 2 Jan 2021." name='not_to_the_owner_input' formControlName='not_to_the_owner_input'
+(keyup)="mychange($event)"></textarea>
+</div>
+
+
+</div>
+<div class="text_count">
+
+<span class=" " min="700">{{remainingText}}/700</span>
+</div>
+<div class="bottom-button-center">
+<button type="button"
+class="btn-next  b1"
+data-bs-dismiss="modal">
+Save
+</button>
+
+</div>
+</div>
+</div>
+</div>
+</form>

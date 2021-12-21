@@ -1,0 +1,440 @@
+
+.alluserdetails{
+    background: #1A1A1A 0% 0% no-repeat padding-box;
+    background-image: url("/assets/images/studio_rental/black.png");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.brand-img-large{
+    display: block;
+}
+.brand-img-responsive{
+    display: none;
+}
+.market-place{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(0, -50%);
+    color: #6B6B6B;
+    font-family: 'Playfair Display', serif;
+    font-size: 280px;
+    opacity: 0.15;;
+}
+.studio-rental-brand{
+    padding: 30px;
+}
+.class-row{
+    position: relative;
+    z-index: 1;
+}
+.image-1{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+.signi-about{
+    color:#EF2936;
+    text-align: center;
+}
+.signi-about span{
+    padding-left: 20px;
+}
+.signi-about-a{
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color:#FFFFFF;
+    text-decoration: none;
+    border-bottom: 3px solid #EF2936;
+}
+.image-2{
+    padding: 0;
+    position: relative;
+}
+.big-image{
+    position: relative;
+    z-index: 1;
+}
+.image-dark{
+    padding: 0;
+    display: block;
+    position: relative;;
+}
+.image-dark img{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    height: 240px;
+}
+.image-3{
+    padding: 0;
+    padding-top: 50px;
+    position: relative;
+}
+.div-para{
+    padding: 20px 30px;
+    color:#FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+.para{
+    font-size: 20px;
+    opacity: 0.8;
+}
+.back-arrow{
+    transform:rotate(180deg);
+}
+.img-getstart{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.get-start{
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+}
+.get-start span{
+    padding-left: 25px;
+}
+@media (max-width:990px){
+    .market-place{
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        transform: translate(0, 80px);
+        color: #6B6B6B;
+        font-size: 70px;
+        opacity: 0.15;;
+    }
+    .studio-rental-brand{
+        padding-left: 10px;
+    }
+    .brand-img-large{
+        display: none;
+    }
+    .brand-img-responsive{
+        display: block;
+    }
+    .image-1{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .image-2{
+        display: none;
+    }
+    .image-dark{
+        display: none;
+    }
+    .image-3{
+        padding-top: 10px;
+        padding-bottom: 280px;
+    }
+    .image-3 .image-3-img{
+        display: none;
+    }
+    .signi-about-a{
+        font-size: 12px;
+    }
+    .div-para{
+        font-size: 14px;
+    }
+    .para{
+        font-size: 12px;
+    }
+    .get-start{
+        bottom: 70px;
+        right: 15px;
+    }
+    .img-getstart{
+        font-size: 20px;
+    }
+}
+
+
+/* .main-background{
+    background-color: #2f4d7d;
+    height: 1000px;
+}
+.studio-rental-brand{
+    padding: 30px;
+}
+.brand-img-large{
+    display: block;
+}
+.brand-img-responsive{
+    display: none;
+}
+.qqq{
+    width: 100%;
+    height: 700px;
+    top: 310px;
+    position: absolute;
+    background: black;
+    font-size: 190px;
+    overflow: hidden;
+    color: #6B6B6B;
+    font-family: 'Playfair Display', serif;
+    opacity: 0.15;;
+}
+.aaa{
+    position: relative;
+    left:50px;
+}
+.significance{
+    position: absolute;
+    bottom: 195px;
+    left: 10px;
+}
+.signi-about{
+    color:#EF2936;
+    text-align: center;
+}
+.signi-about span{
+    padding-left: 40px;
+}
+.signi-about-a{
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color:#FFFFFF;
+    text-decoration: none;
+    border-bottom: 3px solid #EF2936;
+}
+.get-to-login{
+    position: absolute;
+    bottom: 250px;
+    right: 135px;
+}
+.back-arrow{
+    transform:rotate(180deg);
+}
+.img-getstart{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.get-start span{
+    padding-left: 25px;
+}
+.card {
+    position: absolute;
+    left: 390px;
+    right: 0;
+    width: 500px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 10px;
+
+}
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#item-1:checked ~ .cards #song-5,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2,
+#item-4:checked ~ .cards #song-3,
+#item-5:checked ~ .cards #song-4 {
+    transform: translatex(-450px) scale(0.8);
+    opacity: 1;
+    z-index: 0;
+    padding: 20px 40px;
+    background: transparent;
+    
+} 
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-5,
+#item-5:checked ~ .cards #song-1  {
+    transform: translatex(780px) scale(0.8);
+    opacity: 1;
+    z-index: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    padding: 40px 20px;
+    background: transparent;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3,
+#item-4:checked ~ .cards #song-4,
+#item-5:checked ~ .cards #song-5 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    background: transparent;
+}
+#item-2:checked ~ .player #test {
+    transform: translateY(0);
+    display: block;
+    width: 100%;
+}
+#item-2:checked ~ .player #test {
+    transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test {
+    transform: translateY(-80px);
+}
+#item-1:checked ~ .cards #ssd-1,
+#item-2:checked ~ .cards #ssd-2,
+#item-3:checked ~ .cards #ssd-3,
+#item-4:checked ~ .cards #ssd-4,
+#item-5:checked ~ .cards #ssd-5 {
+    display: block;
+}
+#item-1:checked ~ .cards #image-show1,
+#item-2:checked ~ .cards #image-show2,
+#item-3:checked ~ .cards #image-show3,
+#item-4:checked ~ .cards #image-show4,
+#item-5:checked ~ .cards #image-show5 {
+    display: block;
+}
+#item-1:checked ~ .cards #image-show5,
+#item-2:checked ~ .cards #image-show1,
+#item-3:checked ~ .cards #image-show2,
+#item-4:checked ~ .cards #image-show3,
+#item-5:checked ~ .cards #image-show4 {
+    display: block;  
+}
+#item-1:checked ~ .cards #image-show2,
+#item-2:checked ~ .cards #image-show3,
+#item-3:checked ~ .cards #image-show4,
+#item-4:checked ~ .cards #image-show5,
+#item-5:checked ~ .cards #image-show1  {
+    display: block;
+}
+.image-show{
+    display: none;
+}
+.ssd{
+    position: relative;
+    top: -620px;
+    left: 470px;
+    width: 80%;
+    display: none;
+}
+.ads{
+    position: relative;
+    background: black;
+    overflow: hidden;
+    text-align: center;
+    height: 1000px;
+}
+.div-para{
+    text-align: left;
+    padding: 20px 30px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+.para{
+    font-size: 20px;
+    opacity: 0.8;
+}
+@media(min-width: 1400px){
+    .card {
+        position: absolute;
+        left: 650px;
+        right: 0;
+        width: 500px;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        padding: 10px;
+    }
+    .cards {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #item-1:checked ~ .cards #song-5,
+    #item-2:checked ~ .cards #song-1,
+    #item-3:checked ~ .cards #song-2,
+    #item-4:checked ~ .cards #song-3,
+    #item-5:checked ~ .cards #song-4 {
+        transform: translatex(-650px) scale(0.8);
+        opacity: 1;
+        z-index: 0;
+        padding: 20px 40px;
+        background: transparent;
+    } 
+    #item-1:checked ~ .cards #song-2,
+    #item-2:checked ~ .cards #song-3,
+    #item-3:checked ~ .cards #song-4,
+    #item-4:checked ~ .cards #song-5,
+    #item-5:checked ~ .cards #song-1  {
+        transform: translatex(1050px) scale(0.8);
+        opacity: 1;
+        z-index: 0;
+        overflow: hidden;
+        overflow-x: hidden;
+        padding: 40px 20px;
+        background: transparent;
+    }
+    
+    #item-1:checked ~ .cards #song-1,
+    #item-2:checked ~ .cards #song-2,
+    #item-3:checked ~ .cards #song-3,
+    #item-4:checked ~ .cards #song-4,
+    #item-5:checked ~ .cards #song-5 {
+        transform: translatex(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+        background: transparent;
+    }
+    
+    #item-2:checked ~ .player #test {
+        transform: translateY(0);
+        display: block;
+        width: 100%;
+    }
+    
+    #item-2:checked ~ .player #test {
+        transform: translateY(-40px);
+    }
+    
+    #item-3:checked ~ .player #test {
+        transform: translateY(-80px);
+    }
+    .ssd{
+        position: relative;
+        top: -620px;
+        left: 550px;
+        width: 100%;
+        display: none;
+    }
+    .significance{
+        position: absolute;
+        bottom: 195px;
+        left: 70px;
+    }
+    .get-to-login{
+        position: absolute;
+        bottom: 280px;
+        right: 230px;
+    }
+    
+} */

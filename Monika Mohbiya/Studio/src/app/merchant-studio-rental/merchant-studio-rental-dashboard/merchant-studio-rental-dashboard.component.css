@@ -1,0 +1,55 @@
+.register-section{
+  background-image: url("/assets/images/studio_rental/dashboard-img.png");
+  padding: 15px;
+  height: 1080px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.brand-img-large{
+  display: block;
+}
+.brand-img-responsive{
+  display: none;
+}
+/* .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #0000005E;
+} */
+.portfolioz{
+  /* position: absolute;
+  top: 15px;
+  left: 35px; */
+  padding: 15px;
+  /* position: fixed; */
+}
+.register-container{
+  /* text-align: center;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+.register{
+  color: #FFFFFF;
+  font-family:  "Proxima Nova", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  padding-bottom: 30px;
+}
+.btn-continue{
+  font-family:  "Proxima Nova", sans-serif;
+  font-size: 25px;
+  color:#000000;
+  height: 46px;
+  width: 414px;
+  border-radius: 3px;
+  border: none;
+}

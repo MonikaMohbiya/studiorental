@@ -1,0 +1,129 @@
+.alluserdetails{
+    background: #1A1A1A 0% 0% no-repeat padding-box;
+    position: relative;
+    height: 1080px;
+    overflow: hidden;
+}
+.market-place{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #6B6B6B;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 280px;
+    opacity: 0.15;;
+}
+.class-row{
+    position: relative;
+    z-index: 1;
+}
+.brand-img-large{
+    display: block;
+}
+.brand-img-responsive{
+    display: none;
+}
+.studio-rental-brand{
+    padding: 30px;
+}
+.about-us{
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 20px ;
+    padding-left: 80px;
+    padding-bottom: 20px ;
+}
+.about-us-p{
+    font-family: "Montserrat-Light", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: left;
+    opacity: 0.8;
+    padding-left: 80px;
+    padding-right: 50px;
+}
+.about-img{
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    display: block;
+    margin-top: -155px
+}
+.image-aboutus{
+    border-radius: 0px 0px 303px 303px;
+}
+.get-start{
+    padding-top: 20px ;
+    padding-left: 80px;
+}
+.img-getstart{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.get-start span{
+    padding-left: 25px;
+}
+.about-img-hori{
+    display: none;
+}
+.image-aboutus-hori{
+    border-radius: 119px 0px 0px 119px;
+    opacity: 1;
+}
+
+@media (max-width: 990px){
+    .alluserdetails{
+        height: 100%;
+    }
+    .studio-rental-brand{
+        padding-left: 10px;
+    }
+    .brand-img-large{
+        display: none;
+    }
+    .brand-img-responsive{
+        display: block;
+    }
+    .about-us{
+        font-size: 10px;
+        color: #FFFFFF;
+        text-align: left;
+        padding-top: 20px ;
+        padding-left: 10px;
+    }
+    .about-us-p{
+        font-size: 12px;
+        padding-top: 20px ;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about-img{
+        display: none;
+    }
+    .about-img-hori{
+        display: block;
+        padding-right: 0;
+    }
+    .get-start{
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .img-getstart{
+        font-size: 20px;
+    }
+    .market-place{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 90px;
+    }
+}
